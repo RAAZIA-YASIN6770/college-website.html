@@ -1,54 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home_Codes College</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codes College | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <table>
-  <tr>
-  <td><img src="WhatsApp Image 2025-10-26 at 21.43.19_bceffb13.jpg" alt="Codes College Logo" width="160" height="80"></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-  <td><h1>Codes College</h1></td></tr></table><br><br>
-  <p>Your Gateway to the Digital World</p>
-    <a href="index.html">Home</a> |
-    <a href="courses.html">Courses</a> |
-    <a href="admission.html">Admissions</a><hr><br>
-  <img src="WhatsApp Image 2025-10-25 at 23.17.44_0a92a953.jpg"  alt="Campus Photo" width="1110" height="600" align="center" hspace="100"><br><br>
-    
-  <h2>Welcome to Codes College</h2>
-    <p>At Codes College, we are dedicated to shaping the next generation of tech innovators and leaders. Our cutting-edge curriculum, experienced faculty, and industry-focused approach ensure that our students are not just educated, but empowered to excel in the rapidly evolving digital landscape.</p><br><br>
-  <h2>Why Choose Codes College?</h2>
-    <ul>
-      <li>Industry-aligned courses and certifications.</li>
-      <li>Experienced and passionate instructors.</li>
-      <li>Hands-on learning environment.</li>
-      <li>Strong career placement support.</li>
-    </ul><br><br>
-  <h2>Latest News & Updates</h2>  
-    <h3>Codes College Opens Advanced AI Course</h3>
-      <p>Date: October 1, 2025</p>
-      <p>Codes College has launched a state-of-the-art AI course to give students hands-on experience in automation, machine learning, and robotics programming. 
-      This initiative helps students develop practical tech skills for future career success.</p> 
-    <h3>Python Students Develop Portfolio Project</h3>
-        <p>Date: July 15, 2025</p>
-        <p>Our Python students successfully created a professional portfolio project using HTML, Object-Oriented Programming (OOP), and Python basics. 
-        This project showcases their ability to combine front-end design with backend logic, demonstrating real-world development skills and creativity.</p><br><br>
-  <h2>Campus Glimpse</h2>
-    <video src="WhatsApp Video 2025-10-25 at 23.17.44_6caedd09.mp4" width="1330" height="500" align="center" controls></video><br><br>
-    <p>&copy; 2024 Codes College. All rights reserved.</p>
-    <p>Contact us: info@codescollege.edu.pk | +92 3056660169</p>
-    <p><a href="mailto:info@codescollege.edu.pk">Email Us</a></p>
-    <a href="index.html">Home</a> |
-    <a href="courses.html">Courses</a> |
-    <a href="admission.html">Admissions</a>
+
+  <header>
+    <div class="logo-area">
+      <img src="WhatsApp Image 2025-10-26 at 21.43.19_bceffb13.jpg" alt="Codes College Logo">
+      <h1>Codes College</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="WhatsApp Image 2025-10-25 at 23.17.44_0a92a953.jpg" alt="Campus Photo">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Welcome to Codes College</h2>
+          <p>Your Gateway to the Digital World. Shaping the next generation of tech innovators and leaders.</p>
+          <br>
+          <a href="admission.html" class="btn">Apply Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>Why Choose Codes College?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Industry Aligned</h3>
+          <p>Our courses and certifications are designed to meet the demands of the current IT landscape.</p>
+        </div>
+        <div class="card">
+          <h3>Experienced Faculty</h3>
+          <p>Learn from passionate instructors with years of industry experience.</p>
+        </div>
+        <div class="card">
+          <h3>Career Support</h3>
+          <p>We provide strong career placement support and freelancing guidance to our students.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="reveal">
+      <h2>Latest News & Updates</h2>
+      <div class="grid">
+        <div class="card">
+          <span style="color: var(--secondary-color); font-weight: 700;">October 1, 2025</span>
+          <h3>Advanced AI Course Launched</h3>
+          <p>State-of-the-art AI course covers machine learning, automation, and robotics programming.</p>
+        </div>
+        <div class="card">
+          <span style="color: var(--secondary-color); font-weight: 700;">July 15, 2025</span>
+          <h3>Python Portfolio Projects</h3>
+          <p>Students successfully developed professional portfolios combining front-end design with backend logic.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="reveal">
+      <h2>Campus Glimpse</h2>
+      <div class="video-container">
+        <video src="WhatsApp Video 2025-10-25 at 23.17.44_6caedd09.mp4" controls></video>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Codes College is dedicated to empowering students with practical tech skills for future success.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: info@codescollege.edu.pk</p>
+        <p>Phone: +92 3056660169</p>
+        <p>Address: Faisalabad, Pakistan</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <nav>
+          <ul style="flex-direction: column; gap: 0.5rem;">
+            <li><a href="index.html" style="color: white;">Home</a></li>
+            <li><a href="courses.html" style="color: white;">Courses</a></li>
+            <li><a href="admission.html" style="color: white;">Admissions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Codes College. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>

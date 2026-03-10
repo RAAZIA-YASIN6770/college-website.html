@@ -1,74 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admissions_Codes College</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codes College | Admissions</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1 style="text-align:center;">Codes College Admissions</h1>
-     <p>Your Gateway to the Digital World</p>
-     <a href="index.html">Home</a> |
-     <a href="courses.html">Courses</a> |
-     <a href="admission.html">Admissions</a><hr><br><br>
-  <h2>Admission Open for Spring 2026 Batch</h2>
-     <p>Join <b>Codes College</b> and start your journey towards a successful tech career! We are now accepting applications for our latest session — choose your preferred course and apply today.</p><br>
-  <h3>Eligibility Criteria</h3>
-     <ul>
-         <li>Basic knowledge of computers.</li>
-         <li>Passion to learn and grow in the digital field.</li>
-     </ul><br>
-  <h3>Available Courses</h3>
-     <ul>
-         <li>Python Programming</li>
-         <li>Artificial Intelligence (AI)</li>
-         <li>Figma (UI/UX Design)</li>
-         <li>Graphic Designing</li>
-         <li>WordPress Development</li>
-         <li>Facebook Marketing</li>
-     </ul><br>
-  <h3>Admission Form</h3> 
-  <table>
-    <tr>
-      <td><b>Full Name:</b></td>
-      <td><input type="Text" name="Name"></td>
-    </tr>
-    <tr>
-      <td><b>Email Address:</b></td>
-      <td><input type="email" name="email"></td>
-    </tr>
-    <tr>
-      <td><b>Phone Number:</b></td>
-      <td><input type="text" name="phone"></td>
-    </tr></table>
-  <form action="Courses">
-    <label><b>Select Course:</b></label>
-      <select name="course" required>
-        <option value="">-- Select a Course --</option>
-        <option>Python Programming</option>
-        <option>Artificial Intelligence (AI)</option>
-        <option>Figma (UI/UX Design)</option>
-        <option>Graphic Designing</option>
-        <option>WordPress Development</option>
-        <option>Facebook Marketing</option>
-      </select><br><br>
-    <label><b>Why do you want to join Codes College?</b></label><br>
-    <textarea name="reason" rows="4" cols="50"></textarea><br><br>
-    <input type="submit" value="Submit Application">
-    <input type="reset" value="Clear Form">
-  </form><br><br>
-  <h3>Admission Process</h3>
-    <ol>
-      <li>Fill out the online admission form.</li>
-      <li>Wait for confirmation from the admissions office.</li>
-      <li>Attend orientation and start your classes!</li>
-    </ol><br><hr>
-  <p>&copy; 2024 Codes College. All rights reserved.</p>
-  <p>Contact us: info@codescollege.edu.pk | +92 3056660169</p>
-  <p><a href="mailto:info@codescollege.edu.pk">Email Us</a></p>
-  <a href="index.html">Home</a> |
-  <a href="courses.html">Courses</a> |
-  <a href="admission.html">Admissions</a>
+
+  <header>
+    <div class="logo-area">
+      <img src="WhatsApp Image 2025-10-26 at 21.43.19_bceffb13.jpg" alt="Codes College Logo">
+      <h1>Codes College</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admission.html" class="active">Admissions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-text reveal"
+      style="border-radius: 24px; margin-bottom: 3rem; background: linear-gradient(135deg, #1e3a8a, #111827);">
+      <h1>Admissions Open</h1>
+      <p>Spring 2026 Batch — Your journey to a tech career starts here.</p>
+    </section>
+
+    <section class="grid reveal">
+      <div class="card">
+        <h2>Eligibility Criteria</h2>
+        <ul>
+          <li>Basic knowledge of computers.</li>
+          <li>Passion to learn and grow in the digital field.</li>
+          <li>Commitment to project-based learning.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Admission Process</h2>
+        <ol>
+          <li>Fill out the online application form below.</li>
+          <li>Wait for confirmation from our admissions office.</li>
+          <li>Attend orientation and start your professional journey!</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="form-section" class="reveal">
+      <h2>Application Form</h2>
+      <form action="#">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="+92 300 1234567" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="course">Select Course</label>
+          <select id="course" name="course" required>
+            <option value="">-- Choose your path --</option>
+            <option>Python Programming</option>
+            <option>Artificial Intelligence (AI)</option>
+            <option>Figma (UI/UX Design)</option>
+            <option>Graphic Designing</option>
+            <option>WordPress Development</option>
+            <option>Facebook Marketing</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Why do you want to join Codes College?</label>
+          <textarea id="reason" name="reason" rows="4" placeholder="Tell us about your goals..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 1rem;">
+          <button type="submit">Submit Application</button>
+          <button type="reset" style="background: #6b7280;">Clear Form</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Codes College is dedicated to empowering students with practical tech skills for future success.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Details</h3>
+        <p>Email: info@codescollege.edu.pk</p>
+        <p>Phone: +92 3056660169</p>
+        <p>Location: Faisalabad, Pakistan</p>
+      </div>
+      <div class="footer-section">
+        <h3>Office Hours</h3>
+        <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Codes College. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
+
 </html>
